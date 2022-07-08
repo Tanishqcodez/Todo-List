@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>TODO'S List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <span class="ml-3 text-xl cursor-pointer">TODO'S List</span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 hover:text-gray-900 cursor-pointer">Home</a>
+                <a class="mr-5 hover:text-gray-900 cursor-pointer">About</a>
+            </nav>
+        </div>
+    </header>
+    <hr>
+    <section class="my-5">
+        <div class="flex justify-center items-center">
+            <div class="text-center" >
+                <h1 class="text-3xl">TODO'S LIST</h1>
+                <div>
+                    <h1 class="text-2xl mt-10 mb-2">Add new item</h1>
+                    <input id="input-text" type="text" class="border-gray-400 border-2" placeholder="Type here..." >
+                        <span class="block mt-2">
+                            <button onclick="add()" class="mt-1 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add to your list</button>
+                            <button onclick="del()" class="mt-1 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Clear List</button>
+                        </span>
+                </div>
+                <div>
+                    <h1 class="mt-4 text-2xl">Your TODO'S List</h1>
+                    <div class="mt-6" id="append">
+                        <!-- To do goes here -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
